@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasksNFT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    
+</head>
+<body>
+    <section class="main">
+        <header>
+            <h1 class="main__title hidden">Masksnft</h1>
+            <img class="main__logo main__logo_desktop hidden-on-mobile" src="images/main__logo_desktop.svg" alt="Masksnft">
+        </header>
+        <div class="slider">
+            <div class="slider-pagination">
+                <div class="slider-pagination__item">
+                    <img src="images/pagination__image-1.png" alt="">
+                </div>
+                <div class="slider-pagination__item">
+                    <img src="images/pagination__image-1.png" alt="">
+                </div>
+                <div class="slider-pagination__item slider-pagination__item_active not-hidden">
+                    <img src="images/pagination__image-1.png" alt="">
+                </div>
+                <div class="slider-pagination__item">
+                    <img src="images/pagination__image-1.png" alt="">
+                </div>
+                <div class="slider-pagination__item">
+                    <img src="images/pagination__image-1.png" alt="">
+                </div>
+            </div>      
+            <div class="slider-item">
+                <div class="slider__image">
+                    <img src="images/slider__image-1.png" alt="">
+                </div>            
+                <div class="slider-content">
+                    <a href="#" class="slider-content__author">@cameron</a>
+                    <a href="#" class="slider-content__title">Sometimes Typhoons Come</a>
+                    <div class="slider-content-actions">
+                        <button class="btn btn_like">
+                            <object type="image/svg+xml" data="images/btn_like.svg" width="14" height="13">
+                                <img src="images/btn_like.svg" width="14" height="13" alt="Like" />
+                            </object>
+                            <span>37</span>
+                        </button>
+                        <button class="btn btn_more-info">
+                            <span>More info</span>
+                            <object type="image/svg+xml" data="images/btn_more-info.svg" width="5" height="8">
+                                <img src="images/btn_more-info.svg" width="5" height="8" alt="Like" />
+                            </object>
+                        </button>
+                    </div>
+                    <div class="auction">
+                        <button class="btn btn_bid">Place a Bid</button>
+                        <div class="auction__bid">
+                            <span class="auction__bid-title">Minimum bid</span>
+                            <span class="auction__bid-price-eth">10.23 ETH</span>
+                            <span class="auction__bid-price-dollar">$720</span>
+                        </div>
+                        <span class="auction__delimiter"></span>
+                        <div class="auction__timer-wrapper">
+                            <span class="auction__timer-title">Auction ending in</span>
+                            <div class="auction__timer">
+                                <div class="auction__timer-cell">
+                                    <span class="auction__timer-time">23</span>
+                                    <span class="auction__timer-label">Hours</span>
+                                </div>
+                                <span class="auction__timer-delimiter">:</span>
+                                <div class="auction__timer-cell">
+                                    <span class="auction__timer-time">43</span>
+                                    <span class="auction__timer-label">Minutes</span>
+                                </div>
+                                <span class="auction__timer-delimiter">:</span>
+                                <div class="auction__timer-cell">
+                                    <span class="auction__timer-time">21</span>
+                                    <span class="auction__timer-label">Seconds</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-controls">
+            <img src="images/main__logo_mobile.svg" alt="Masksnft" class="main__logo main__logo_mobile hidden-on-desktop">
+            <div class="main-controls-type__switch">
+                <button class="btn btn_group btn_active">Masks</button>
+                <button class="btn btn_group">Video</button>
+            </div>
+            <div class="main-actions">  
+                <button class="btn btn_more-actions hidden-on-desktop"><span></span></button>
+                <button class="btn btn_transparent hidden-on-mobile">Connect wallet</button>
+                <button class="btn hidden-on-mobile">Add mask</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
