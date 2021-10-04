@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code examples for ui-kit</title>
+    <link rel="stylesheet" href="ui-kit.css">
+    <style>
+        body {
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        pre {
+            padding: 8px; 
+            background-color: #f6f8fa;
+            border: 0.5px solid #ddd;
+            border-radius: 3px;
+            color: #212529;
+            margin: 10px 0 20px;
+            overflow: hidden;
+        }
+        .w100 {width: 100%;}
+        #cards_vertical {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        #cards_vertical .product {margin-bottom: 8px;}
+        .product_page {margin-bottom: 8px;}
+    </style>
+</head>
+<body>
+    <!-- Code examples for ui-kit -->
+    <section  id="typography">
+        <div class="title-h1">Typography</div>
+        </br>
+        <div class="title-examples">
+            <div class="title-h1">Title/H1/32</div>
+            <pre><code>&lt;div class=&quot;title-h1&quot;&gt;Title/H1/32&lt;/div&gt;</code></pre>
+
+            <div class="title-h2">Title/H2/24</div>
+            <pre><code>&lt;div class=&quot;title-h2&quot;&gt;Title/H2/24&lt;/div&gt;</code></pre>
+
+            <div class="title-h3">Title/H3/20</div>
+            <pre><code>&lt;div class=&quot;title-h3&quot;&gt;Title/H3/20&lt;/div&gt;</code></pre>
+
+            <div class="title-h4">Title/H4/16</div>
+            <pre><code>&lt;div class=&quot;title-h4&quot;&gt;Title/H4/16&lt;/div&gt;</code></pre>
+
+        </div>
+        <div class="text-examples">
+            </br>
+            <div class="t">Text/T1/16/Regular</div>
+            <pre><code>&lt;div class=&quot;t&quot;&gt;Text/T1/16/Regular&lt;/div&gt;</code></pre>
+
+            <div class="t t_b">Text/T1/16/Bold</div>
+            <pre><code>&lt;div class=&quot;t t_b&quot;&gt;Text/T1/16/Bold&lt;/div&gt;</code></pre>
+
+            <div class="t t_14">Text/T1/14/Medium</div>
+            <pre><code>&lt;div class=&quot;t t_14&quot;&gt;Text/T1/14/Medium&lt;/div&gt;</code></pre>            
+            </br>
+            <div class="t_os t_14 t_l">Text/T2/14/Light</div>
+            <pre><code>&lt;div class=&quot;t_os t_14 t_l&quot;&gt;Text/T2/14/Light&lt;/div&gt;</code></pre>
+
+            <div class="t_os t_14">Text/T2/14/Regular</div>
+            <pre><code>&lt;div class=&quot;t_os t_14&quot;&gt;Text/T2/14/Regular&lt;/div&gt;</code></pre>
+            
+            <div class="t_os t_14 t_sb">Text/T2/14/Semibold</div>
+            <pre><code>&lt;div class=&quot;t_os t_14 t_sb&quot;&gt;Text/T2/14/Semibold&lt;/div&gt;</code></pre>
+
+            <div class="t_os t_14 t_b">Text/T2/14/Bold</div>
+            <pre><code>&lt;div class=&quot;t_os t_14 t_b&quot;&gt;Text/T2/14/Bold&lt;/div&gt;</code></pre>
+            </br>
+            <div class="t_os t_12 t_l">Text/T3/12/Light</div>
+            <pre><code>&lt;div class=&quot;t_os t_12 t_l&quot;&gt;Text/T3/12/Light&lt;/div&gt;</code></pre>
+
+            <div class="t_os t_12">Text/T3/12/Regular</div>
+            <pre><code>&lt;div class=&quot;t_os t_12&quot;&gt;Text/T3/12/Regular&lt;/div&gt;</code></pre>
+
+            <div class="t_os t_12 t_sb">Text/T3/12/Semibold</div>
+            <pre><code>&lt;div class=&quot;t_os t_12 t_sb&quot;&gt;Text/T3/12/Semibold&lt;/div&gt;</code></pre>
+
+            <div class="t_os t_12 t_b">Text/T3/12/Bold</div>
+            <pre><code>&lt;div class=&quot;t_os t_12 t_b&quot;&gt;Text/T3/12/Bold&lt;/div&gt;</code></pre>
+
+            <div class="t_os t_10 t_detail t_sb">Text/Details/10/Semibold</div>
+            <pre><code>&lt;div class=&quot;t_os t_10 t_detail t_sb&quot;&gt;Text/Details/10/Semibold&lt;/div&gt;</code></pre>
+
+            <div class="t_os t_10 t_detail t_l">Text/Details/10/Semibold</div>
+            <pre><code>&lt;div class=&quot;t_os t_10 t_detail t_l&quot;&gt;Text/Details/10/Semibold&lt;/div&gt;</code></pre>
+        </div>
+    </section>
+    </br>
+    </br>
+    <section id="buttons">
+        <div class="title-h1">Buttons</div>
+        <div class="title-h4">Primary buttons</div>
+        <button class="btn btn_prim">Primary</button>
+        <pre><code>&lt;button class=&quot;btn btn_prim&quot;&gt;
+    Primary
+&lt;/button&gt;</code></pre>
+
+        <button class="btn btn_prim btn_prim_ghost">Primary/Ghost</button>
+        <pre><code>&lt;button class=&quot;btn btn_prim btn_prim_ghost&quot;&gt;
+    Primary/Ghost
+&lt;/button&gt;</code></pre>
+
+        <button class="btn btn_prim btn_disabled">Primary/Disabled</button>
+        <pre><code>&lt;button class=&quot;btn btn_prim btn_disabled&quot;&gt;
+    Primary/Disabled
+&lt;/button&gt;</code></pre>
+
+        <div class="title-h4">Secondary buttons</div>
+        <button class="btn btn_sec">Secon<span>dary</span></button>
+        <pre><code>&lt;button class=&quot;btn btn_sec&quot;&gt;
+    Secon&lt;span&gt;dary&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+
+        <button class="btn btn_sec btn_sec_ghost">Secondary<span>/Ghost</span></button>
+        <pre><code>&lt;button class=&quot;btn btn_sec btn_sec_ghost&quot;&gt;
+    Secondary&lt;span&gt;/Ghost&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+
+        <button class="btn btn_sec btn_disabled">Secondary<span>/Disabled</span></button>
+        <pre><code>&lt;button class=&quot;btn btn_sec btn_disabled&quot;&gt;
+    Secondary&lt;span&gt;/Disabled&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+
+        <div class="title-h4">Primary small buttons</div>
+        <button class="btn btn_prim btn_sm">Primary/Small</button>
+        <pre><code>&lt;button class=&quot;btn btn_prim btn_sm&quot;&gt;
+    Primary/Small
+&lt;/button&gt;</code></pre>
+
+        <button class="btn btn_prim btn_prim_ghost btn_sm">Primary/Ghost/Small</button>
+        <pre><code>&lt;button class=&quot;btn btn_prim btn_prim_ghost btn_sm&quot;&gt;
+    Primary/Ghost/Small
+&lt;/button&gt;</code></pre>
+
+        <button class="btn btn_prim btn_sm btn_disabled">Primary/Small/Disabled</button>
+        <pre><code>&lt;button class=&quot;btn btn_prim btn_sm btn_disabled&quot;&gt;
+    Primary/Small/Disabled
+&lt;/button&gt;</code></pre>
+
+        <div class="title-h4">Secondary small buttons</div>
+        <button class="btn btn_sec btn_sm">Secondary/Small</button>
+        <pre><code>&lt;button class=&quot;btn btn_sec btn_sm&quot;&gt;
+    Secondary/Small
+&lt;/button&gt;</code></pre>
+
+        <button class="btn btn_sec btn_sm btn_disabled">Secondary/Small/Disabled</button>
+        <pre><code>&lt;button class=&quot;btn btn_sec btn_sm btn_disabled&quot;&gt;
+    Secondary/Small/Disabled
+&lt;/button&gt;</code></pre>
+
+        <div class="title-h4">Other buttons</div>
+        <button class="btn btn_add">Add<span></span></button>
+        <pre><code>&lt;button class=&quot;btn btn_add&quot;&gt;
+    Add
+    &lt;span&gt;&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+
+        <button class="btn btn_text-arrow">Details<span></span></button>
+        <pre><code>&lt;button class=&quot;btn btn_text-arrow&quot;&gt;
+    Details&lt;span&gt;&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+
+        <button class="btn btn_remove"><span></span></button>
+        <pre><code>&lt;button class=&quot;btn btn_remove&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+
+        <button class="btn btn_favorite"><span></span></button>
+        <pre><code>&lt;button class=&quot;btn btn_favorite&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+
+        <button class="btn btn_favorite btn_is-fav"><span></span></button>
+        <pre><code>&lt;button class=&quot;btn btn_favorite btn_is-fav&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+
+    </section>
+    </br>
+    </br>
+    <section>
+        <div class="title-h1">Input</div>
+        <div class="input-wrapper input_labeled">
+            <input type="text" class="input_textfield" id="some-id" placeholder=" ">
+            <label for="some-id" class="input_label">Phone</label>
+        </div>
+        <pre><code>&lt;div class=&quot;input-wrapper input_labeled&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;input_textfield&quot; id=&quot;some-id&quot; placeholder=&quot; &quot;&gt;
+    &lt;label for=&quot;some-id&quot; class=&quot;input_label&quot;&gt;Phone&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+    </section>
+    </br>
+    </br>
+    <section id="cards">
+        <div class="title-h1">Cards</div>
+        <div class="title-h3">Vertical cards</div>
+        <div id="cards_vertical">
+            <div class="product">
+                <div class="product__image"><img src="images/product__image.png" alt=""></div>
+                <a href="#" class="product__name">Product</a>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__controls">
+                    <button class="btn btn_add">Add<span></span></button>
+                    <div class="counter hidden">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite"><span></span></button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product__image"><img src="images/product__image.png" alt=""></div>
+                <a href="#" class="product__name">Product added and favorited</a>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__controls">
+                    <button class="btn btn_add hidden">Add<span></span></button>
+                    <div class="counter">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite btn_is-fav"><span></span></button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-flags">
+                    <div class="product-flags-wrapper">                    
+                        <div class="product__flag_large hidden"><span></span>Alergy free</div>
+                        <div class="product__flag">
+                            <img src="images/flag-1.svg" alt="">
+                        </div>
+                        <div class="product__flag">
+                            <img src="images/flag-2.svg" alt="">
+                        </div>
+                        <div class="product__flag">
+                            <img src="images/flag-3.svg" alt="">
+                        </div>
+                        <div class="product__flag more-flags t_sb t_detail t_10 hidden">
+                            +3
+                        </div>
+                    </div>
+                </div>
+                <div class="product__image"><img src="images/product__image.png" alt=""></div>
+                <a href="#" class="product__name">Product with flags</a>
+                <div class="product__price-changed hidden"></div>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__controls">
+                    <div class="product__details-btn hidden">Details</div>
+                    <button class="btn btn_add">Add<span></span></button>
+                    <div class="counter hidden">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite"><span></span></button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-flags">
+                    <div class="product-flags-wrapper">
+                        <div class="product__flag">
+                            <img src="images/flag-1.svg" alt="">
+                        </div>
+                        <div class="product__flag">
+                            <img src="images/flag-2.svg" alt="">
+                        </div>
+                        <div class="product__flag">
+                            <img src="images/flag-3.svg" alt="">
+                        </div>
+                        <div class="product__flag more-flags t_sb t_detail t_10">
+                            +3
+                        </div>
+                    </div>
+                </div>
+                <div class="product__image"><img src="images/product__image.png" alt=""></div>
+                <a href="#" class="product__name">Product with 3+ flags</a>
+                <div class="product__price-changed hidden"></div>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__controls">
+                    <div class="product__details-btn hidden">Details</div>
+                    <button class="btn btn_add">Add<span></span></button>
+                    <div class="counter hidden">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite"><span></span></button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product-flags">
+                    <div class="product-flags-wrapper">
+                        <div class="product__flag_large"><span></span>Alergy free</div>
+                    </div>
+                </div>
+                <div class="product__image"><img src="images/product__image.png" alt=""></div>
+                <a href="#" class="product__name">Product with one big flag</a>
+                <div class="product__price-changed hidden"></div>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__controls">
+                    <div class="product__details-btn hidden">Details</div>
+                    <button class="btn btn_add">Add<span></span></button>
+                    <div class="counter hidden">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite"><span></span></button>
+                </div>
+            </div>
+
+            <div class="product product_discount">
+                <div class="product-flags">
+                    <div class="product__flag_discount">-20%</div>
+                </div>
+                <div class="product__image"><img src="images/product__image.png" alt=""></div>
+                <a href="#" class="product__name">Product with discount</a>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__price_old">£2.13</div>
+                <div class="product__controls">
+                    <button class="btn btn_add">Add<span></span></button>
+                    <div class="counter hidden">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite"><span></span></button>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="product__image"><img src="images/product__image.png" alt=""></div>
+                <a href="#" class="product__name">Product low stock</a>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__flag_low-stock">
+                    Low stock!
+                    <span>3 products left</span>
+                </div>
+                <div class="product__controls">
+                    <button class="btn btn_add">Add<span></span></button>
+                    <div class="counter hidden">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite"><span></span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="title-h3">Horizontal cards</div>
+        <div id="cards_horizontal">
+            <div class="product product_discount product_horizontal">
+                <div class="product__image"><img src="images/product__image_s.png" alt=""></div>
+                <div class="product-info">
+                    <a href="#" class="product__name">Product</a>
+                    <div class="product__price-wrapper">
+                        <div class="product__price">£1,59</div>
+                        <div class="product__price-per-prod">· 1 pc / £1.59</div>
+                    </div>
+                </div>
+                <div class="product__controls">
+                    <button class="btn btn_text-arrow">Details<span></span></button>
+                    <button class="btn btn_add hidden">Add<span></span></button>
+                    <div class="counter">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product product_discount product_horizontal">
+                <div class="product__image"><img src="images/product__image_s.png" alt=""></div>
+                <div class="product-info">
+                    <a href="#" class="product__name">Price changed (lower)</a>
+                    <div class="product__flag_discount">Price has been changed: <span> (£2.59)</span></div>
+                    <div class="product__price-wrapper">
+                        <div class="product__price">£1,59</div>
+                        <div class="product__price-per-prod">· 1 pc / £1.59</div>
+                    </div>
+                </div>
+                <div class="product__controls">
+                    <button class="btn btn_text-arrow">Details<span></span></button>
+                    <button class="btn btn_add hidden">Add<span></span></button>
+                    <div class="counter">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product product_horizontal">                
+                <div class="product__image"><img src="images/product__image_s.png" alt=""></div>
+                <div class="product-info">
+                    <a href="#" class="product__name">Price changed (Higher)</a>
+                    <div class="product__flag_discount">Price has been changed: <span> (£1.59)</span></div>
+                    <div class="product__price-wrapper">
+                        <div class="product__price">£2,59</div>
+                        <div class="product__price-per-prod">· 1 pc / £2.59</div>
+                    </div>
+                </div>
+                <div class="product__controls">
+                    <button class="btn btn_text-arrow">Details<span></span></button>
+                    <button class="btn btn_add hidden">Add<span></span></button>
+                    <div class="counter">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="product product_horizontal product_out-of-stock">
+                <div class="product__image"><img src="images/product__image_s.png" alt=""></div>
+                <div class="product-info">
+                    <a href="#" class="product__name">Product out of stock</a>
+                    <div class="product__flag_out-of-stock">This item is out of stock</div>
+                </div>
+                <div class="product__controls">
+                    <button class="btn btn_text-arrow">Details<span></span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="title-h3">Product page</div>
+        <div id="product-page">
+            <div class="product product_page">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <div class="product__image"><img src="images/product__image_l.png" alt=""></div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>                
+                <a href="#" class="product__name">Product</a>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__controls">
+                    <button class="btn btn_add hidden">Add<span></span></button>
+                    <div class="counter ">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite"><span></span></button>
+                </div>
+                <div class="product__nav">
+                    <button class="btn btn_sec btn_sm">Nutrition</button>
+                    <button class="btn btn_sec btn_sm">Ingredients</button>
+                    <button class="btn btn_sec btn_sm">Other</button>
+                </div>
+            </div>
+
+            <div class="product product_page">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <div class="product__image"><img src="images/product__image_l.png" alt=""></div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>                
+                <a href="#" class="product__name">Product low stock</a>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__flag_low-stock">
+                    Low stock!
+                    <span>3 products left</span>
+                </div>
+                <div class="product__controls">
+                    <button class="btn btn_add hidden">Add<span></span></button>
+                    <div class="counter ">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite btn_is-fav"><span></span></button>
+                </div>
+                <div class="product__nav">
+                    <button class="btn btn_sec btn_sm">Nutrition</button>
+                    <button class="btn btn_sec btn_sm">Ingredients</button>
+                    <button class="btn btn_sec btn_sm">Other</button>
+                </div>
+            </div>
+
+            <div class="product product_page flag_large">
+                <div class="product-flags">
+                    <div class="product-flags-wrapper">                    
+                        <div class="product__flag_large"><span></span>Alergy free</div>
+                    </div>
+                </div>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <div class="product__image"><img src="images/product__image_l.png" alt=""></div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>                
+                <a href="#" class="product__name">Product with one big flag</a>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__controls">
+                    <button class="btn btn_add hidden">Add<span></span></button>
+                    <div class="counter ">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite btn_is-fav"><span></span></button>
+                </div>
+                <div class="product__nav">
+                    <button class="btn btn_sec btn_sm">Nutrition</button>
+                    <button class="btn btn_sec btn_sm">Ingredients</button>
+                    <button class="btn btn_sec btn_sm">Other</button>
+                </div>
+            </div>
+
+            <div class="product product_page flag_small">
+                <div class="product-flags">
+                    <div class="product-flags-wrapper">
+                        <div class="product__flag">
+                            <img src="images/flag-1.svg" alt="">
+                        </div>
+                        <div class="product__flag">
+                            <img src="images/flag-2.svg" alt="">
+                        </div>
+                        <div class="product__flag">
+                            <img src="images/flag-3.svg" alt="">
+                        </div>
+                        <div class="product__flag more-flags t_sb t_detail t_10">
+                            +3
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <div class="product__image"><img src="images/product__image_l.png" alt=""></div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>                
+                <a href="#" class="product__name">Product with 3+ flags</a>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__controls">
+                    <button class="btn btn_add hidden">Add<span></span></button>
+                    <div class="counter ">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite btn_is-fav"><span></span></button>
+                </div>
+                <div class="product__nav">
+                    <button class="btn btn_sec btn_sm">Nutrition</button>
+                    <button class="btn btn_sec btn_sm">Ingredients</button>
+                    <button class="btn btn_sec btn_sm">Other</button>
+                </div>
+            </div>
+
+            <div class="product product_page">
+                <div class="product-flags">
+                    <div class="product__flag_discount">-20%</div>
+                </div>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <div class="product__image"><img src="images/product__image_l.png" alt=""></div>
+                    </div>
+                    <div class="pagination"></div>
+                </div>                
+                <a href="#" class="product__name">Product with discount</a>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__controls">
+                    <button class="btn btn_add hidden">Add<span></span></button>
+                    <div class="counter ">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite btn_is-fav"><span></span></button>
+                </div>
+                <div class="product__nav">
+                    <button class="btn btn_sec btn_sm">Nutrition</button>
+                    <button class="btn btn_sec btn_sm">Ingredients</button>
+                    <button class="btn btn_sec btn_sm">Other</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="other">
+        <div class="title-h1">Other</div>
+        <div class="checkout">
+            <div class="checkout__image"></div>
+            <div class="checkout-section">
+                <div class="checkout__title t t_10">Delivery:</div>
+                <div class="checkout__text t t_14 t_sb">25-30 min</div>
+            </div>
+            <div class="checkout-section">
+                <div class="checkout__title t t_10">Total:</div>
+                <div class="checkout__text t t_14 t_sb">£ 150.99</div>
+            </div>
+            <button class="checkout__btn btn btn_prim btn_sm">Checkout</button>
+        </div>
+    </section>
+
+    <script src="ui-kit.js"></script>
+</body>
+</html>
