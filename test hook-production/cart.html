@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hook Prod Test</title>
+    <link rel="stylesheet" href="ui-kit/ui-kit.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <button class="btn btn_back"></button>
+        <div class="page__title title-h2">Cart</div>
+    </header>
+    <section class="order">
+        <div class="order-info">
+            <div class="order-address">
+                <div class="order-address__title t t_14 t_sb">Delivery address</div>
+                <button class="btn btn_delete"><span></span></button>
+                <form class="order-address__form">
+                    <div class="input-wrapper input_labeled">
+                        <input type="text" class="input_textfield" id="address" placeholder=" ">
+                        <label for="address" class="input_label">Address</label>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-wrapper input_labeled">
+                            <input type="text" class="input_textfield" id="flat" placeholder=" ">
+                            <label for="flat" class="input_label">Flat</label>
+                        </div>
+                        <div class="input-wrapper input_labeled">
+                            <input type="text" class="input_textfield" id="floor" placeholder=" ">
+                            <label for="floor" class="input_label">Floor</label>
+                        </div>
+                        <div class="input-wrapper input_labeled">
+                            <input type="text" class="input_textfield" id="block" placeholder=" ">
+                            <label for="block" class="input_label">Block</label>
+                        </div>
+                    </div>                
+                </form>
+            </div>
+            <div class="products">
+                <div class="products__title t t_14 t_sb">2 items</div>
+                <div class="product product_discount product_horizontal">
+                    <div class="product__image"><img src="images/product__image_s.png" alt=""></div>
+                    <div class="product-info">
+                        <a href="#" class="product__name">Product</a>
+                        <div class="product__price-wrapper">
+                            <div class="product__price">£1,59</div>
+                            <div class="product__price-per-prod">· 1 pc / £1.59</div>
+                        </div>
+                    </div>
+                    <div class="product__controls">
+                        <div class="counter">
+                            <button class="btn btn_remove"><span></span></button>
+                            <div class="counter__value">12</div>
+                            <button class="btn btn_add"><span></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product product_discount product_horizontal">
+                    <div class="product__image"><img src="images/product__image_s.png" alt=""></div>
+                    <div class="product-info">
+                        <a href="#" class="product__name">Price changed (lower)</a>
+                        <div class="product__flag_discount">Price has been changed: <span class="t_line-t"> (£2.59)</span></div>
+                        <div class="product__price-wrapper">
+                            <div class="product__price">£1,59</div>
+                            <div class="product__price-per-prod">· 1 pc / £1.59</div>
+                        </div>
+                    </div>
+                    <div class="product__controls">
+                        <button class="btn btn_text-arrow">Details<span></span></button>
+                        <div class="counter">
+                            <button class="btn btn_remove"><span></span></button>
+                            <div class="counter__value">12</div>
+                            <button class="btn btn_add"><span></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product product_discount product_horizontal">
+                    <div class="product__image"><img src="images/product__image_s.png" alt=""></div>
+                    <div class="product-info">
+                        <a href="#" class="product__name">Price changed (lower)</a>
+                        <div class="product__flag_discount">Special offer: <span> -20%</span></div>
+                        <div class="product__price-wrapper">
+                            <div class="product__price">£1,59</div>
+                            <div class="product__price-per-prod">· 1 pc / £1.59</div>
+                        </div>
+                    </div>
+                    <div class="product__controls">
+                        <button class="btn btn_add">Add<span></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-payment">
+            <div class="order-payment__title t t_14 t_sb">Payment</div>
+            <div class="input-wrapper input_promocode">
+                <input type="text" class="input_textfield" placeholder="Promocode">
+            </div>
+            <div class="order-payment__summing">
+                <div class="order-payment__text t t_16">
+                    <span>Order:</span>
+                    <span>£ 4</span>
+                </div>
+                <div class="order-payment__text t t_16">
+                    <span>Delivery:</span>
+                    <span>£ 0,4</span>
+                </div>
+                <div class="order-payment__text_promocode t t_16">
+                    <span>Promocode:</span>
+                    <span>-£ 0,4</span>
+                </div>
+                <div class="order-payment__total title-h2">
+                    <span>Total</span>
+                    <span>£ 4</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="checkout">
+        <div class="checkout__image"></div>
+        <div class="checkout-section">
+            <div class="checkout__title t t_10">Delivery:</div>
+            <div class="checkout__text t t_14 t_sb">25-30 min</div>
+        </div>
+        <div class="checkout-section">
+            <div class="checkout__title t t_10">Total:</div>
+            <div class="checkout__text t t_14 t_sb">£ 150.99</div>
+        </div>
+        <button class="checkout__btn btn btn_prim btn_sm">Checkout</button>
+    </footer>
+    <script src="ui-kit/ui-kit.js"></script>
+</body>
+</html>

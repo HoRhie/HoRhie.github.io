@@ -4,9 +4,54 @@ body {
     margin: 0 auto;
 }
 
-.wrapper {
-    width: calc(100vw - 20px);
-    margin: 10px auto;
-    padding: 10px;
-    background-color: #fff;
+header {
+    display: flex;
+    justify-content: center;
+    height: 99px;
+    padding: 9px 12px 58px;
+    background-color: var(--color-primary);
+    border-radius: 0px 0px 8px 8px;
 }
+
+.order {
+    padding: 0 24px;
+    margin: -48px 0 79px;
+    &-info {        
+        background-color: #fff;
+        border-radius: 8px;
+        margin-bottom: 13px;
+    }
+    &-address {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 18px 13px 21px 18px;
+        &__title {margin-right: auto;}
+        &__form {margin-top: 19px; width: 100%;}
+    }
+    .input-group {margin-top: 10px;}
+    &-payment {
+        &__title {margin-bottom: 10px;}
+        &__summing {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 9px 11px 12px 18px;
+        }
+        &__text, &__text_promocode, &__total {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__text {margin-bottom: 4px;}
+        &__text_promocode {color: var(--color-error);}
+        &__total {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--color-secondary-10);
+        }
+    }
+    .input_promocode input {
+        height: 48px;
+        margin-bottom: 20px;
+    }
+}
+
+.products__title {margin: 0 18px 12px;}

@@ -29,6 +29,7 @@
         }
         #cards_vertical .product {margin-bottom: 8px;}
         .product_page {margin-bottom: 8px;}
+        .checkout {margin-left: -20px; max-width: 500px;}
     </style>
 </head>
 <body>
@@ -182,6 +183,11 @@
     &lt;span&gt;&lt;/span&gt;
 &lt;/button&gt;</code></pre>
 
+        <button class="btn btn_delete"><span></span></button>
+        <pre><code>&lt;button class=&quot;btn btn_remove&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+
     </section>
     </br>
     </br>
@@ -195,6 +201,42 @@
     &lt;input type=&quot;text&quot; class=&quot;input_textfield&quot; id=&quot;some-id&quot; placeholder=&quot; &quot;&gt;
     &lt;label for=&quot;some-id&quot; class=&quot;input_label&quot;&gt;Phone&lt;/label&gt;
 &lt;/div&gt;</code></pre>
+
+        <div class="input-wrapper">
+            <input type="text" class="input_textfield" placeholder="Promocode">
+        </div>
+        <pre><code>&lt;div class=&quot;input-wrapper&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;input_textfield&quot; placeholder=&quot;Promocode&quot;&gt;
+&lt;/div&gt;</code></pre>
+
+        <div class="input-group">
+            <div class="input-wrapper input_labeled">
+                <input type="text" class="input_textfield" id="flat" placeholder=" ">
+                <label for="flat" class="input_label">Flat</label>
+            </div>
+            <div class="input-wrapper input_labeled">
+                <input type="text" class="input_textfield" id="floor" placeholder=" ">
+                <label for="floor" class="input_label">Floor</label>
+            </div>
+            <div class="input-wrapper input_labeled">
+                <input type="text" class="input_textfield" id="block" placeholder=" ">
+                <label for="block" class="input_label">Block</label>
+            </div>
+        </div>
+        <pre><code>&lt;div class=&quot;input-group&quot;&gt;
+    &lt;div class=&quot;input-wrapper input_labeled&quot;&gt;
+        &lt;input type=&quot;text&quot; class=&quot;input_textfield&quot; id=&quot;flat&quot; placeholder=&quot; &quot;&gt;
+        &lt;label for=&quot;flat&quot; class=&quot;input_label&quot;&gt;Flat&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;input-wrapper input_labeled&quot;&gt;
+        &lt;input type=&quot;text&quot; class=&quot;input_textfield&quot; id=&quot;floor&quot; placeholder=&quot; &quot;&gt;
+        &lt;label for=&quot;floor&quot; class=&quot;input_label&quot;&gt;Floor&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;input-wrapper input_labeled&quot;&gt;
+        &lt;input type=&quot;text&quot; class=&quot;input_textfield&quot; id=&quot;block&quot; placeholder=&quot; &quot;&gt;
+        &lt;label for=&quot;block&quot; class=&quot;input_label&quot;&gt;Block&lt;/label&gt;
+    &lt;/div&gt;
+&lt;/div&gt; </code></pre>
     </section>
     </br>
     </br>
@@ -334,7 +376,7 @@
                 <a href="#" class="product__name">Product with discount</a>
                 <div class="product__price-per-prod">1 pc / £1.59</div>
                 <div class="product__price">£1,59</div>
-                <div class="product__price_old">£2.13</div>
+                <div class="product__price_old t_line-t">£2.13</div>
                 <div class="product__controls">
                     <button class="btn btn_add">Add<span></span></button>
                     <div class="counter hidden">
@@ -393,7 +435,7 @@
                 <div class="product__image"><img src="images/product__image_s.png" alt=""></div>
                 <div class="product-info">
                     <a href="#" class="product__name">Price changed (lower)</a>
-                    <div class="product__flag_discount">Price has been changed: <span> (£2.59)</span></div>
+                    <div class="product__flag_discount">Price has been changed: <span class="t_line-t"> (£2.59)</span></div>
                     <div class="product__price-wrapper">
                         <div class="product__price">£1,59</div>
                         <div class="product__price-per-prod">· 1 pc / £1.59</div>
@@ -414,7 +456,7 @@
                 <div class="product__image"><img src="images/product__image_s.png" alt=""></div>
                 <div class="product-info">
                     <a href="#" class="product__name">Price changed (Higher)</a>
-                    <div class="product__flag_discount">Price has been changed: <span> (£1.59)</span></div>
+                    <div class="product__flag_discount">Price has been changed: <span class="t_line-t"> (£1.59)</span></div>
                     <div class="product__price-wrapper">
                         <div class="product__price">£2,59</div>
                         <div class="product__price-per-prod">· 1 pc / £2.59</div>
