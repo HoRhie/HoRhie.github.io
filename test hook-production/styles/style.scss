@@ -31,6 +31,8 @@ body {
     padding: 9px 40px 9px 24px;
     background-color: var(--color-primary);
     border-radius: 0px 0px 8px 8px;
+    max-width: 1024px;
+    margin: 0 auto;
     .btn_back {
         display: flex;
         justify-content: center;
@@ -91,6 +93,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
+    margin: 0 auto;
 }
 
 .product {
