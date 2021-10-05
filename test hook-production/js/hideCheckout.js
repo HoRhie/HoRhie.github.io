@@ -2,6 +2,8 @@ var windowHeight = window.innerHeight;
 var windowWidth = window.innerWidth;
 
 // Hides fixed footer, when keybord is opened
+hideCheckout();
+
 function hideCheckout() {
     document.write([
         "<style>",
