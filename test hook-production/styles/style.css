@@ -154,9 +154,9 @@ body {
   max-height: 65px; }
 
 .table-item {
-  width: 68px;
-  height: 52px;
-  margin: 0 2px 13px;
+  width: 25%;
+  margin-bottom: 13px;
+  padding: 0 2px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
