@@ -9,11 +9,205 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <button class="btn_back"></button>
-        <h2 class="page__title">Milk & Cheese</h2>
+    <header id="header">
+        <div class="header-inner">
+            <a href="cart.html" class="btn btn_back"><span></span></a>
+            <div class="page__title title-h2">Milk & Cheese</div>
+        </div>        
+        <div id="fake-header"><div id="fake-header__inner"></div></div>
     </header>
+    <section class="product-page">
+        <div class="product product_page flag_small">
+            <div class="product-flags">
+                <div class="product-flags-wrapper">
+                    <div class="product__flag">
+                        <img src="images/flag-1.svg" alt="">
+                    </div>
+                    <div class="product__flag">
+                        <img src="images/flag-2.svg" alt="">
+                    </div>
+                    <div class="product__flag">
+                        <img src="images/flag-3.svg" alt="">
+                    </div>
+                    <div class="product__flag more-flags t_sb t_detail t_10">
+                        +3
+                    </div>
+                </div>
+            </div>
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <div class="product__image"><img src="images/product__image_l.png" alt=""></div>
+                </div>
+                <div class="pagination">
+                    <div class="pagination__item pagination__item_active"></div>
+                    <div class="pagination__item"></div>
+                    <div class="pagination__item"></div>
+                </div>
+            </div>                
+            <a href="#" class="product__name">Product with 3+ flags</a>
+            <div class="product__price-per-prod">1 pc / £1.59</div>
+            <div class="product__price">£1,59</div>
+            <div class="product__controls">
+                <button class="btn btn_add hidden">Add<span></span></button>
+                <div class="counter ">
+                    <button class="btn btn_remove"><span></span></button>
+                    <div class="counter__value">12</div>
+                    <button class="btn btn_add"><span></span></button>
+                </div>
+                <button class="btn btn_favorite btn_is-fav"><span></span></button>
+            </div>
+            <div class="product__nav">
+                <button class="btn btn_sec btn_sm">Nutrition</button>
+                <button class="btn btn_sec btn_sm">Ingredients</button>
+                <button class="btn btn_sec btn_sm">Other</button>
+            </div>
+        </div>
+        <div class="recommend__title title-h4">Buy with this product</div>
+        <div class="recommend-swiper">
+            <div class="product">
+                <div class="product__image"><img src="images/product__image.png" alt=""></div>
+                <a href="#" class="product__name">Product</a>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__controls">
+                    <button class="btn btn_add">Add<span></span></button>
+                    <div class="counter hidden">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite btn_is-fav"><span></span></button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__image"><img src="images/product__image.png" alt=""></div>
+                <a href="#" class="product__name">Product</a>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__controls">
+                    <button class="btn btn_add">Add<span></span></button>
+                    <div class="counter hidden">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite"><span></span></button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__image"><img src="images/product__image.png" alt=""></div>
+                <a href="#" class="product__name">Product</a>
+                <div class="product__price-per-prod">1 pc / £1.59</div>
+                <div class="product__price">£1,59</div>
+                <div class="product__controls">
+                    <button class="btn btn_add">Add<span></span></button>
+                    <div class="counter hidden">
+                        <button class="btn btn_remove"><span></span></button>
+                        <div class="counter__value">12</div>
+                        <button class="btn btn_add"><span></span></button>
+                    </div>
+                    <button class="btn btn_favorite"><span></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="product-details">
+            <div class="details__title t t_16 t_b ">Nutrition</div>
+            <div class="details__text t_os t_12 t_l">Lorem ipsum dolor sit amet, <span class="t_sb">consectetur adipiscing</span> elit. Ultrices at egestas tempus duis egestas semper dolor <span class="t_sb">morbi purus.</span> Lorem ipsum dolor sit amet, <span class="t_sb">consectetur adipiscing</span> elit. Ultrices at egestas tempus duis egestas semper dolor <span class="t_sb">morbi purus.</span></div>
+            <div class="details__list t_os t_12 t_norm">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>Ultrices at egestas tempus</li>
+                    <li>Duis egestas semper dolor morbi purus.</li>
+                </ul>
+            </div>
+            <div class="delimiter"></div>
+            <div class="details-table t" id="elemShowHide">
+                <div class="table-item-wrapper">
+                    <div class="table-item">
+                        <div class="table-item__value t_18 t_reg">28</div>
+                        <div class="table-item__text t_12 t_norm">Kkal.</div>
+                        <div class="table-item__flag t_os t_10 t_detail t_sb">4% RI</div>
+                        <div class="table-item__flag table-item__flag_low t_os t_10 t_detail t_sb">Low</div>
+                    </div>
+                    <div class="table-item">
+                        <div class="table-item__value t_18 t_reg">1.3 g</div>
+                        <div class="table-item__text t_12 t_norm">Proteins</div>
+                        <div class="table-item__flag t_os t_10 t_detail t_sb">10% RI</div>
+                    </div>
+                    <div class="table-item">
+                        <div class="table-item__value t_18 t_reg">0 g</div>
+                        <div class="table-item__text t_12 t_norm">Fats</div>
+                        <div class="table-item__flag t_os t_10 t_detail t_sb">12% RI</div>
+                    </div>
+                    <div class="table-item">
+                        <div class="table-item__value t_18 t_reg">28</div>
+                        <div class="table-item__text t_12 t_norm">Сarbs</div>
+                        <div class="table-item__flag t_os t_10 t_detail t_sb">10% RI</div>
+                    </div>
+                    <div class="table-item">
+                        <div class="table-item__value t_18 t_reg">6,4 mg</div>
+                        <div class="table-item__text t_12 t_norm">Niacin</div>
+                        <div class="table-item__flag t_os t_10 t_detail t_sb">40% RI</div>
+                    </div>
+                    <div class="table-item">
+                        <div class="table-item__value t_18 t_reg">0,8 g</div>
+                        <div class="table-item__text t_12 t_norm">Vitamin B6</div>
+                        <div class="table-item__flag t_os t_10 t_detail t_sb">57% RI</div>
+                    </div>
+                    <div class="table-item">
+                        <div class="table-item__value t_18 t_reg">0 g</div>
+                        <div class="table-item__text t_12 t_norm">Fats</div>
+                        <div class="table-item__flag t_os t_10 t_detail t_sb">12% RI</div>
+                    </div>
+                    <div class="table-item">
+                        <div class="table-item__value t_18 t_reg">28</div>
+                        <div class="table-item__text t_12 t_norm">Сarbs</div>
+                        <div class="table-item__flag t_os t_10 t_detail t_sb">10% RI</div>
+                    </div>
+                </div>
+                <button class="btn btn_text-arrow" id="btnShowHide" onclick="btnShowHide()"><div class="btn__text">Show</div><span></span></button>
+            </div>
+            <div class="delimiter"></div>
+            <div class="details__title t t_16 t_b">Ingridients</div>
+            <div class="details__text t_os t_12 t_l">Lorem ipsum dolor sit amet, <span class="t_sb">consectetur adipiscing</span> elit. Ultrices at egestas tempus duis egestas semper dolor <span class="t_sb">morbi purus.</span></div>
+            <div class="delimiter"></div>
+            <div class="details__title t t_b t_16">Other</div>
+            <div class="details-specs t_os t_12 t_norm">
+                <div class="details-spec">
+                    <div class="details-spec__title">Страна производства</div>
+                    <div class="details-spec__value">Россия</div>
+                </div>
+                <div class="details-spec">
+                    <div class="details-spec__title">Состав</div>
+                    <div class="details-spec__value">цельное молоко</div>
+                </div>
+                <div class="details-spec">
+                    <div class="details-spec__title">Срок годности</div>
+                    <div class="details-spec__value">12 дн.</div>
+                </div>
+                <div class="details-spec">
+                    <div class="details-spec__title">Изготовитель</div>
+                    <div class="details-spec__value">ОАО "Компания "Юнимилк"</div>
+                </div>
+                <div class="details-spec">
+                    <div class="details-spec__title">Жирность</div>
+                    <div class="details-spec__value">4.5 %</div>
+                </div>
+                <div class="details-spec">
+                    <div class="details-spec__title">Содержание лактозы</div>
+                    <div class="details-spec__value">обычное (более 1% лактозы)</div>
+                </div>
+                <div class="details-spec">
+                    <div class="details-spec__title">Витаминизированное/ обогащенное</div>
+                    <div class="details-spec__value">нет</div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <script src="ui-kit/ui-kit.js"></script>
+    <script src="js/stickyHeader.js"></script>
+    <script src="js/btnShowHide.js"></script>
 </body>
 </html>

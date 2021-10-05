@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
-        <button class="btn btn_back"></button>
-        <div class="page__title title-h2">Cart</div>
+    <header id="header">
+        <div class="header-inner">
+            <a href="index.html" class="btn btn_back"><span></span></a>
+            <div class="page__title title-h2">Cart</div>
+        </div>        
+        <div id="fake-header"><div id="fake-header__inner"></div></div>
     </header>
     <section class="order">
         <div class="order-info">
@@ -44,7 +47,7 @@
                 <div class="product product_discount product_horizontal">
                     <div class="product__image"><img src="images/product__image_s.png" alt=""></div>
                     <div class="product-info">
-                        <a href="#" class="product__name">Product</a>
+                        <a href="index.html" class="product__name">Best-in 10 British Big Eggs...</a>
                         <div class="product__price-wrapper">
                             <div class="product__price">£1,59</div>
                             <div class="product__price-per-prod">· 1 pc / £1.59</div>
@@ -61,7 +64,7 @@
                 <div class="product product_discount product_horizontal">
                     <div class="product__image"><img src="images/product__image_s.png" alt=""></div>
                     <div class="product-info">
-                        <a href="#" class="product__name">Price changed (lower)</a>
+                        <a href="index.html" class="product__name">Best-in 10 British Big Eggs...</a>
                         <div class="product__flag_discount">Price has been changed: <span class="t_line-t"> (£2.59)</span></div>
                         <div class="product__price-wrapper">
                             <div class="product__price">£1,59</div>
@@ -69,7 +72,7 @@
                         </div>
                     </div>
                     <div class="product__controls">
-                        <button class="btn btn_text-arrow">Details<span></span></button>
+                        <button class="btn btn_details">Details<span></span></button>
                         <div class="counter">
                             <button class="btn btn_remove"><span></span></button>
                             <div class="counter__value">12</div>
@@ -80,7 +83,7 @@
                 <div class="product product_discount product_horizontal">
                     <div class="product__image"><img src="images/product__image_s.png" alt=""></div>
                     <div class="product-info">
-                        <a href="#" class="product__name">Price changed (lower)</a>
+                        <a href="index.html" class="product__name">Best-in 10 British Big Eggs...</a>
                         <div class="product__flag_discount">Special offer: <span> -20%</span></div>
                         <div class="product__price-wrapper">
                             <div class="product__price">£1,59</div>
@@ -131,5 +134,6 @@
         <button class="checkout__btn btn btn_prim btn_sm">Checkout</button>
     </footer>
     <script src="ui-kit/ui-kit.js"></script>
+    <script src="js/stickyHeader.js"></script>
 </body>
 </html>
