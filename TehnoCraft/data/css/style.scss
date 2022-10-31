@@ -35,6 +35,7 @@ $text_font: 'Mont';
     list-style: none;
     box-sizing: border-box;
 }
+img {line-height: 0;}
 a {text-decoration: none;}
 h2 {
     font-family: $title_font;
@@ -70,6 +71,10 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    img {
+        width: 96px;
+        height: 96px;
+    }
     &-menu {
         display: flex;
         flex-direction: row;
@@ -144,6 +149,8 @@ body {
     align-items: center;
     justify-content: center;
     &__item {
+        display: flex;
+        align-items: center;
         max-width: 160px;
         max-height: 70px;
         margin: 0 37px 25px;
