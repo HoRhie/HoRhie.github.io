@@ -139,11 +139,11 @@ body {
     left: -4px;
     width: calc(100% + 8px);
     height: calc(100% + 8px);
-    background-color: #47A898;
-    opacity: 70%;
+    background-color: #000000;
+    opacity: 85%;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(3px); }
+    filter: blur(4px); }
   .main-slider .slick-dots {
     position: absolute;
     bottom: 43px;
@@ -234,7 +234,7 @@ body {
     margin-bottom: 70px; }
   .feedback-btn {
     background-color: #F8AE69;
-    padding: 10px 70px 16px;
+    padding: 16px 70px 16px;
     border-radius: 11px;
     cursor: pointer;
     max-width: max-content;
