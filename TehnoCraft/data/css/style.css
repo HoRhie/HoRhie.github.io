@@ -32,6 +32,15 @@ h2 {
   font-size: 32px;
   text-transform: uppercase; }
 
+h4 {
+  font-family: "Mont";
+  font-weight: bold;
+  font-size: 14px; }
+
+.text {
+  font-family: "Mont";
+  font-size: 14px; }
+
 body {
   background-color: #e2f3f0; }
 
@@ -85,14 +94,143 @@ body {
         color: #47A898;
         font-weight: 600; }
 
+.language {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+  padding: 0 11px; }
+  .language__item {
+    color: #D0C9D6;
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-weight: 600; }
+    .language__item::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      height: 3px;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 3px 3px 0 0; }
+    .language__item.active {
+      color: #000000; }
+      .language__item.active::after {
+        background-color: #47A898; }
+    .language__item:hover {
+      color: #000000; }
+  .language:hover {
+    font-weight: normal; }
+
+.main-slider {
+  position: relative;
+  color: #ffffff; }
+  .main-slider .slick-track::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    background-color: #47A898;
+    opacity: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px); }
+  .main-slider .slick-dots {
+    position: absolute;
+    bottom: 43px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .main-slider .slick-dots li {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      border-radius: 20px;
+      border: 2px solid #47A898;
+      background-color: #ffffff;
+      padding: 2px; }
+      .main-slider .slick-dots li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        cursor: pointer;
+        color: #ffffff;
+        border: 0;
+        outline: none; }
+      .main-slider .slick-dots li.slick-active button {
+        background: #47A898; }
+  .main-slider .slick-arrow {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 23px;
+    cursor: pointer; }
+    .main-slider .slick-arrow span {
+      width: 25px;
+      height: 25px;
+      border-left: 5px solid #ffffff;
+      border-bottom: 5px solid #ffffff;
+      border-radius: 0 0 0 4px;
+      transform: rotate(45deg); }
+  .main-slider .slick-prev {
+    left: 0; }
+  .main-slider .slick-next {
+    right: 0; }
+    .main-slider .slick-next span {
+      transform: rotate(225deg); }
+  .main-slider-item {
+    position: relative;
+    padding: 87px 102px 130px; }
+  .main-slider__title {
+    margin-bottom: 30px; }
+  .main-slider-text h4 {
+    margin-bottom: 8px; }
+  .main-slider-text-wrapper.columns_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-basis: 50%;
+    margin: 0 -24px; }
+    .main-slider-text-wrapper.columns_2 h4 {
+      margin-bottom: 22px; }
+    .main-slider-text-wrapper.columns_2 .main-slider-text {
+      width: 50%;
+      margin: 0 24px; }
+  .main-slider-text ul {
+    line-height: 22px; }
+    .main-slider-text ul li {
+      list-style: square;
+      margin-left: 16px; }
+
 .feedback {
   padding: 85px 116px 68px; }
   .feedback__title {
     margin-bottom: 50px; }
   .feedback__text {
-    font-family: "Mont";
     line-height: 33px;
-    font-size: 14px;
     margin-bottom: 70px; }
   .feedback-btn {
     background-color: #F8AE69;
@@ -112,9 +250,7 @@ body {
   .partners__title {
     text-align: center; }
   .partners__text {
-    font-family: "Mont";
-    padding: 0 33px;
-    font-size: 14px; }
+    padding: 0 33px; }
 
 .brands {
   margin: 81px 0 50px;
