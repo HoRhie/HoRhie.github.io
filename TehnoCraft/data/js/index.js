@@ -22,23 +22,25 @@ function initMainSlider() {
     });
 }
 
-function initMobileSlider() {
-    $('.brands').slick({
-        dots: false,
-        arrows: false,
-        infinite: false,
-        mobileFirst: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 650,
-                settings: 'unslick'
-            }
-      ]
-    })
+function toggleClasses() {
+    let headerBurgerMenu = $('.header-menu'),
+        headerBurger =  $('.header-burger');
+    headerBurgerMenu.toggleClass('header-menu_active');
+    headerBurger.toggleClass('header-burger_active');
+    $('body').toggleClass('scroll_lock');
+}
+
+function burgerMenu(className) {
+    $(className).on('click', function(e) {
+        e.preventDefault();
+        toggleClasses();
+    });
+    $('.overlay').on('click', function(e) {
+        e.preventDefault();
+        toggleClasses();
+    });
 }
 
 languageSwitch();
 initMainSlider();
-// initMobileSlider();
+burgerMenu('.header-burger');
