@@ -18,9 +18,9 @@
                 <img src="data/images/tehnocraft-logo.svg" alt="Tehnocraft-logo">
             </a>
             <div class="header-menu">
-                <a href="#" class="header-menu__item">Главная</a>
-                <a href="#" class="header-menu__item">О нас</a>
-                <a href="#" class="header-menu__item">Контакты</a>
+                <a href="#main-slider" class="header-menu__item anchor-link">О нас</a>
+                <a href="#partners" class="header-menu__item anchor-link">Партнеры</a>
+                <a href="#contacts" class="header-menu__item anchor-link">Контакты</a>
                 <div class="header-menu__item language">
                     <a href="#" data-lang="ru" class="language__item active">RU</a>
                     <a href="#" data-lang="kz" class="language__item">KAZ</a>
@@ -33,7 +33,16 @@
         </header>
     </div>
     <div class="content-container">
-        <div class="main-slider">
+        <div class="welcome content">
+            <div class="welcome-wrapper">
+                <h2 class="welcome__title">TehnoCraft</h2>
+                <h3 class="welcome__text">Ваш помощник в сфере КИПиА</h3>
+                <div class="welcome-btn">
+                    <span class="welcome-btn__text">СВЯЗАТЬСЯ</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-slider content" id="main-slider">
             <div class="main-slider-item">
                 <h2 class="main-slider__title">Что мы предлагаем?</h2>
                 <div class="main-slider-text-wrapper columns_2">
@@ -77,11 +86,11 @@
             <div class="feedback__text text">Также мы с готовностью подберём, рассчитаем и установим привод под любую вашу задачу.
                 Вместе с поставкой вы можете рассчитывать на высококачественный сервис и техническую поддержку с нашей стороны начиная с внедрения или модернизации существующего оборудования, заканчивая гарантийным и после гарантийным обслуживанием.
                 </div>
-            <div class="feedback-btn">
+            <a href="#contacts" class="feedback-btn">
                 <span class="feedback-btn__text">СВЯЗАТЬСЯ</span>
-            </div>
+            </a>
         </div>
-        <div class="partners content">
+        <div class="partners content" id="partners">
             <h2 class="partners__title">ПОСТАВЛЯЕМ ПРИВОДНУЮ ТЕХНИКУ ОТ БРЕНДОВ:</h2>
             <div class="brands">
                 <div class="brands__item"><img src="data/images/Danfoss_Logo.png" alt="Danfoss Logo"></div>
@@ -95,10 +104,14 @@
             <div class="partners__text text">Официальный партнёр <strong>Danfoss Drives</strong>, одного из подразделений <strong>Danfoss</strong> – ведущего производителя приводной техники. 
             </div>
         </div>
-        <div class="contacts"></div>
-    </div>
-    <div class="side-menu">
-        
+        <div class="contacts content" id="contacts">
+            <h2>НАШИ КОНТАКТЫ:</h2>
+            <div class="contacts__company text">ТОО «Tehnocraft»</div>
+            <div class="contacts__location text">Усть-Каменогорск, Казахстан</div>
+            <a href="tel:+77777777777" class="contacts__phone text">+ 7 (777) 777-77-77</a>
+            <a href="mailto:post@mail.ru" class="contacts__mail text">post@mail.ru</a>
+            <div class="contacts-logo"><img src="data/images/tehnocraft-logo_main-color.svg" alt="Tehnocraft-logo"></div>
+        </div>
     </div>
     <div class="footer-wrapper">
         <footer class="content-container"></footer>
