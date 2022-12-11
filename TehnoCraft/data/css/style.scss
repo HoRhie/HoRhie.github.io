@@ -30,6 +30,7 @@ $prim_color: #47A898;
 $sec_color: #ffffff;
 $text_color: #000000;
 $btn_color: #F8AE69;
+
 // FONTS VARIABLES
 $title_font: 'Oswald';
 $text_font: 'Mont';
@@ -62,6 +63,7 @@ h4 {
 html {scroll-behavior: smooth;}
 
 body {
+    position: relative;
     background-color: lighten($prim_color, 45%);
 }
 
@@ -221,6 +223,8 @@ body {
 
 .welcome {
     background-image: url(../images/welcome_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 500px;
     max-width: 100%;
     display: flex;
@@ -248,7 +252,6 @@ body {
     }
     &-btn {
         background-color: $sec_color;
-        color: $prim_color;
         border-radius: 6px;
         text-align: center;
         font-family: $title_font;
@@ -260,10 +263,12 @@ body {
         box-shadow: 0px 3px 7px rgba(5, 5, 5, 0.363);
         font-size: 24px;
         padding: 8px 43px;
+        margin-top: 20px;
         &:hover {
             background-color: $prim_color;
             color: $sec_color;
         }
+        a {color: $prim_color;}
     }
 }
 
@@ -579,10 +584,15 @@ body {
     }
 }
 @media all and (max-width:425px) {
+    body {padding-top: 75px;}
     h2 {font-size: 25px;}
     .header {
         height: 75px;
-        &-wrapper {height: 75px;}
+        &-wrapper {
+            height: 75px;
+            position: fixed;
+            top: 0;
+        }
         &-menu {
             width: 100vw;
             left: -100vw;
@@ -595,6 +605,7 @@ body {
     .partners__text {padding: 0;}
     .main-slider-item {padding: 30px 25px 50px;}
     .main-slider {
+        padding: 0;
         .slick-arrow {display: none;}
         .slick-dots {bottom: 20px;}
     }

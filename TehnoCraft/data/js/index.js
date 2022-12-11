@@ -1,3 +1,6 @@
+let headerBurgerMenu = $('.header-menu'),
+    headerBurger =  $('.header-burger');
+
 function languageSwitch() {
     $(".language__item").on('click', function(e) {
         e.preventDefault();
@@ -22,9 +25,7 @@ function initMainSlider() {
     });
 }
 
-function toggleClasses() {
-    let headerBurgerMenu = $('.header-menu'),
-        headerBurger =  $('.header-burger');
+function toggleOverlay() {    
     headerBurgerMenu.toggleClass('header-menu_active');
     headerBurger.toggleClass('header-burger_active');
     $('body').toggleClass('scroll_lock');
@@ -33,14 +34,23 @@ function toggleClasses() {
 function burgerMenu(className) {
     $(className).on('click', function(e) {
         e.preventDefault();
-        toggleClasses();
+        toggleOverlay();
     });
     $('.overlay').on('click', function(e) {
         e.preventDefault();
-        toggleClasses();
+        toggleOverlay();
+    });
+}
+
+function turnOffOverlay(className) {
+    $(className).not('.language').on('click', function(e) {
+        headerBurgerMenu.removeClass('header-menu_active');
+        headerBurger.removeClass('header-burger_active');
+        $('body').removeClass('scroll_lock');
     });
 }
 
 languageSwitch();
 initMainSlider();
 burgerMenu('.header-burger');
+turnOffOverlay('.header-menu__item');
